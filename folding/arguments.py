@@ -9,7 +9,7 @@ def get_args(params):
 
     parser.add_argument('-r', type=int, dest='nrestarts', default=params['NRUNS'], help='number of noisy restrarts')
     parser.add_argument('-pd', type=float, dest='pcut', default=params['PCUT'], help='min probability of distance restraints')
-    parser.add_argument('-m', type=int, dest='mode', default=2, choices=[0,1,2], help='0: sh+m+l, 1: (sh+m)+l, 2: (sh+m+l)')
+    parser.add_argument('-m', type=int, dest='mode', default=0, choices=[0,1,2], help='0: sh+m+l, 1: (sh+m)+l, 2: (sh+m+l)')
     parser.add_argument('-bb', type=str, dest='bb', default='', help='predicted backbone torsions')
     parser.add_argument('-sg', type=str, dest='sg', default='', help='window size and order for a Savitzky-Golay filter (comma-separated)')
     parser.add_argument('-n', type=int, dest='steps', default=1000, help='number of minimization steps')
