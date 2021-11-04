@@ -20,8 +20,8 @@ def get_args(params):
     parser.add_argument('--no-fastrelax', dest='fastrelax', action='store_false')
     parser.add_argument('--roll', dest='roll', action='store_true', help='circularly shift 6d coordinate arrays by 1')
     parser.add_argument('--no-roll', dest='roll', action='store_false')
-    parser.set_defaults(use_orient=True)
-    parser.set_defaults(fastrelax=True)
+    parser.set_defaults(use_orient=False)
+    parser.set_defaults(fastrelax=False)
     parser.set_defaults(roll=False)
 
     args = parser.parse_args()
